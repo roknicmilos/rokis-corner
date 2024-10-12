@@ -2,6 +2,8 @@
 # It is meant to be used as a standalone file or as a base file
 # for a more complex setup.
 
+name: rokis-corner-prod
+
 services:
 
   web:
@@ -28,6 +30,10 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
+
+networks:
+  rokis_corner_prod_network:
+    name: rokis-corner-prod-network
 
 volumes:
   postgres_data:
