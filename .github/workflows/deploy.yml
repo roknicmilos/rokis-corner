@@ -31,5 +31,6 @@ jobs:
           && git checkout develop \
           && git pull \
           && docker build -t rokis-corner-node . \
+          && rm -rf build \
           && docker run --rm -v $(pwd)/build:/app/build rokis-corner-node
           '
