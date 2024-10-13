@@ -6,3 +6,7 @@ node_modules/
 
 # Build files
 build/
+
+# IDE
+.idea/
+.vscode/
