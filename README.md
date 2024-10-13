@@ -9,17 +9,13 @@
    Change the values in `src/.env` to match your environment.
    <br/><br/>
 
-2. Build the Docker image:
+2. Make sure `start.sh` is executable:
     ```bash
-    docker build -t rokis-corner-node .
+    chmod +x scripts/start.sh
     ```
 
-3. Run the Docker container:
+3. Run the application:
     ```bash
-    docker run --rm -v $(pwd)/build:/app/build rokis-corner-node
+    ./scripts/start.sh
     ```
-
-4. Open the generated HTML file in your browser:
-    ```bash
-    open build/index.html
-    ```
+   Check your browser. The index page should be opened.
