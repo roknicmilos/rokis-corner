@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0d1117;
+    color: white;
+    padding: 0 0 60px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 120px auto 60px auto;
+    width: 80%;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 70px;
+        width: 280px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-text {
+    text-align: justify;
+    width: 70%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 20px;
+
+    @media only screen and (max-width: 768px) {
+        width: 85%;
+    }
+}
+
+.introduction-text a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.portfolio-button {
+    margin: 40px auto;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px,
+    rgba(240, 46, 46, 0.3) 10px 10px,
+    rgba(240, 46, 46, 0.2) 15px 15px,
+    rgba(240, 46, 46, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
