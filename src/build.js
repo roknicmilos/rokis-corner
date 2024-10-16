@@ -7,7 +7,9 @@ dotenv.config({ path: path.resolve(__dirname, ".env") });
 const htmlFilePath = path.join(__dirname, "..", "build", "index.html");
 let html = fs.readFileSync(htmlFilePath, "utf-8");
 
-html = html.replace(/@portfolioURL/g, process.env.PORTFOLIO_URL);
+html = html.replace(/@myPortfolioURL/g, process.env.MY_PORTFOLIO_URL);
+
+html = html.replace(/@portfolizerURL/g, process.env.PORTFOLIZER_URL);
 
 if (process.env.GOOGLE_ANALYTICS_TRACKING_ID) {
     const gaTemplatePath = path.join(__dirname, "google_analytics.html");

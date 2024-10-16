@@ -22,9 +22,10 @@ main {
     flex-direction: column;
 }
 
-.introduction-text {
+.paragraph {
     text-align: justify;
     width: 70%;
+    max-width: 1000px;
     margin: 20px auto;
     line-height: 1.6;
     font-size: 20px;
@@ -34,11 +35,15 @@ main {
     }
 }
 
-.introduction-text a {
+.paragraph a {
     color: white;
     font-weight: 900;
     text-decoration: none;
     border-bottom: 1px solid white;
+}
+
+.paragraph--centered {
+    text-align: center;
 }
 
 .portfolio-button {
@@ -55,4 +60,11 @@ main {
     rgba(240, 46, 46, 0.2) 15px 15px,
     rgba(240, 46, 46, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
