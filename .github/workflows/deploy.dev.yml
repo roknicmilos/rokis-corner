@@ -30,6 +30,6 @@ jobs:
           && ssh-add ~/.ssh/github_ed25519 \
           && git checkout develop \
           && git pull \
-          && docker build -t rokis-corner-node . \
-          && docker run --rm -v $(pwd)/build:/app/build rokis-corner-node
+          && docker build -t rokis-corner-node-dev . \
+          && docker run --rm -v $(pwd)/build:/app/build rokis-corner-node-dev
           '
